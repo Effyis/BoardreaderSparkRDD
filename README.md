@@ -1,6 +1,7 @@
 # BoardreaderSparkRDD
 <u>Custom SparkRDD to read Boardreader REST APIs</u>
 
+
 Parameters of the RDD are as follows:
 
   ```BoardreaderRDD(sc: SparkContext, url: String, numPartitions: Int, mapRow: (T) => String)```
@@ -8,10 +9,11 @@ Parameters of the RDD are as follows:
 Where url corresponds to the Boardreader REST API
 
 RDD Usage:
+Copy the jar file https://github.com/Effyis/BoardreaderSparkRDD/tree/master/target/boardreader-spark-rdd-project-0.0.1-SNAPSHOT-jar-with-dependencies.jar.
 
-To use with Spark Scala shell, add the jar file location while invoking the Spark Scala Shell
+To use with Spark Scala shell, refer the above jar file location while invoking the Spark Scala Shell
 
- ```./spark-shell --jars /<jar location>/boardreader-spark-rdd-project.jar```
+ ```./spark-shell --jars /<jar location>//boardreader-spark-rdd-project-0.0.1-SNAPSHOT-jar-with-dependencies.jar```
 <br><br>Invoke BoardreaderRDD by passing the Boardreader API URL
 
 ```import boardreader.spark.rdd._ ```
